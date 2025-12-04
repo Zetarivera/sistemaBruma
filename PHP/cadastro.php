@@ -28,7 +28,6 @@ include 'header.php';
       #containerPai, #containerForms{
         flex: 1;
         padding: 10px;
-        border: 1px solid #ccc;
         height: 100%;
       }
 
