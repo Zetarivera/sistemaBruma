@@ -16,8 +16,9 @@
     <?php include 'header.php'; ?>
     <section id="home-hero">
         <section id="contTxtBtn">
-            <h2>As Melhores Clínicas em Um Só Lugar.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Sua beleza em boas mãos</h2>
+            <p>Conectamos você às melhores clínicas de estética da sua região.
+                Agende procedimentos com segurança e praticidade.</p>
             <button id="btn01" href="#servicos">Explorar serviços</button>
         </section>
 
@@ -25,7 +26,7 @@
             <img class="imgex" src="../Assets/IMG/imgex2.png" alt="Imagem vazia">
         </figure>
     </section>
-    <hr>
+
     <section id="socialProof">
         <p><b>Quem usou e aprovou!</b></p>
         <section>
@@ -37,15 +38,15 @@
             <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
         </section>
     </section>
-    <hr>
+
     <section id="servicos">
         
     </section>
-    <hr>
+    
     <section id="clinicas">
         
     </section>
-    <hr>
+    
     <section id="sobre">
         
     </section>

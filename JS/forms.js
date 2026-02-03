@@ -7,8 +7,10 @@
         formClinica.style.display = "none" //Esconde o formulário da clínica
       } else {
         formCliente.style.display = "none" //Esconde o formulário do cliente
+        formClinica.style.display = "block" //Mostra o formulário da clínica
       }
     }
+	
     function mostrarClinica() {
       var formClinica = document.getElementById("formClinica");
       var formCliente = document.getElementById("formCliente");
@@ -17,5 +19,6 @@
         formCliente.style.display = "none" //Esconde o formulário do cliente
      } else {
         formClinica.style.display = "none" //Esconde o formulário da clínica
+        formCliente.style.display = "block" //Mostra o formulário do cliente
       }
     }

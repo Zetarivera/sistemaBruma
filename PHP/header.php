@@ -21,11 +21,15 @@
             margin: 0; padding: 0;
         }
 
-        .navbar {
+        .navbar, .navbarLogin {
             align-items: first baseline;
             display: flex;
             gap: 2em;
             font-size: 14px;
+        }
+
+        .navbar a{
+            color: gray;
         }
 
         .header label {
@@ -41,17 +45,22 @@
             color: coral;
         }
 
-        .buttonEntrar{
-            background-color: #fff;
-            color: black;
-            padding: 08px 50px;
+        a {
+            font-weight: bold;
+        }
+
+        .buttonCadastrar{
+            background-color: coral;
+            color: white;
+            font-weight: bold;
+            padding: 08px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 14px;
-            margin: 4px 2px;
             cursor: pointer;
-            border-radius: 4px;
+            border-radius: 20px;
+            border-color: transparent;
         }
     </style>
 </head>
@@ -63,13 +72,17 @@
         </div>
 
         <div class="navbar">
+            <a href="index.php">Início</a>
             <a href="#clinicas">Clínicas</a>
             <a href="#servicos">Serviços</a>
             <a href="#sobre">Sobre Nós</a>
         </div>
 
-        <div class="login">
-            <input type="button" class="buttonEntrar" value="Entrar" onclick="window.location.href='principal.php'">
+        <div class="navbarLogin">
+            <a class="linkEntrar" href="login.php">Entrar</a>
+            <a class="linkCadastrar" href="cadastroUsuario.php">
+                <input type="button" class="buttonCadastrar" value="Cadastrar" />
+            </a>
         </div>
     </header>
  </body>
