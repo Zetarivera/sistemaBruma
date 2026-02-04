@@ -1,14 +1,12 @@
 /* INDEX */
 
-* {
+.containerIndex{
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     color: black;
-}
-
-body{
-    margin: 0;
-    padding: 0;
 }
 
 #home-hero {
@@ -16,7 +14,7 @@ body{
     align-items: center;
 }
 
-h2 {
+.containerIndex h2 {
     font-size: 40px;
 }
 
@@ -48,13 +46,6 @@ h2 {
     background-color: #fff;
 }
 
-hr{
-    border: none;
-    height: 20px;
-    background-color: #fff;
-}
-
-
 #socialProof{
     height: 200px;
     font-size: 20px;
@@ -67,5 +58,3 @@ hr{
     width: 08%;
     margin: 10px 5px;
 }
-
-/* FORMULÁRIO DE CADASTRO */

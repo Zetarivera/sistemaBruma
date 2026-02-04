@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
         }
+        
         footer {
             background-color: #f8f9fa;
             color: #6c757d;
