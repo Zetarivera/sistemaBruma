@@ -3,7 +3,6 @@
     <title></title>
     <style>
         .styleHeader {
-            color: black;
             padding: 2px;
             display: flex;
             align-items: center;
@@ -18,11 +17,19 @@
             text-decoration: none;
         }
 
+        .logo{
+            color: black;
+        }
+
         .navbar, .navbarLogin {
             align-items: first baseline;
             display: flex;
             gap: 2em;
             font-size: 14px;
+        }
+
+        .navbarLogin{
+            color: white;
         }
 
         .navbar a{
@@ -60,6 +67,27 @@
             border-color: transparent;
         }
 
+        .buttonCadastrar:hover {
+            opacity: 0.8;
+        }
+
+        #buttonEntrar1{
+            background-color: coral;
+            color: white;
+            padding: 08px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+            border-color: transparent;
+        }
+
+        #buttonEntrar1:hover {
+            opacity: 0.8;
+        }
+
         /*Estilização do Modal*/
         input[type=text],
         input[type=password] {
@@ -71,7 +99,7 @@
             box-sizing: border-box;
         }
 
-        .buttonEntrar{
+        .buttonEntrar2{
             background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
@@ -81,7 +109,7 @@
             width: 100%;
         }
 
-        .buttonEntrar:hover {
+        .buttonEntrar2:hover {
             opacity: 0.8;
         }
 
@@ -197,10 +225,12 @@
         </div>
 
         <div class="navbarLogin">
-            <button onclick="document.getElementById('id01').style.display='block'"
-                    style="width:auto;">
-                Entrar
-            </button>   
+            <button type="button"
+                    onclick=
+                    "document.getElementById('id01').style.display='block'"
+                    class="buttonEntrar1" name="buttonEntrar1" id="buttonEntrar1">
+                <b>Entrar</b>
+            </button>
 
             <div id="id01" class="modal">
                 <form class="modal-content animate" action="">
@@ -224,7 +254,7 @@
                                 placeholder="Digite sua senha"
                                 name="userSenha" required>
 
-                        <button class="buttonEntrar" type="submit">Entrar</button>
+                        <button class="buttonEntrar2" type="submit">Entrar</button>
                         <input type="checkbox" checked="checked">Lembre de mim
                     </div>
 
