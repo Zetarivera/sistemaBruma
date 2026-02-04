@@ -47,19 +47,19 @@
         
         <div id="campoForm1" name="campoForm1">
           <input type="text" id="nome" name="nome" maxlength="150"
-          placeholder="Nome completo" required>
+          placeholder="Nome completo" required />
 
           <input id="email" name="email" type="email" maxlength="50"
-          placeholder="E-mail" autocomplete="email" required><br>
+          placeholder="E-mail" autocomplete="email" required /><br>
 
           <input id="senha" name="senha" type="password" maxlength="20"
           placeholder="Senha de Acesso" autocomplete="current-password" required />
 
           <input id="senha_confirma" name="senha_confirma" type="password"
-          placeholder="Confirmação da Senha" required><br>
+          placeholder="Confirmação da Senha" required /><br>
           
           <input type="text" id="cpf" name="cpf"
-          placeholder="CPF (somente números)" maxlength="11" required>
+          placeholder="CPF (somente números)" maxlength="11" required />
 
           <input type="date" id="birthdate" name="nascimento" required/><br>
 
