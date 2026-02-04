@@ -15,26 +15,55 @@
         text-align: center
       }
       
-      #campoForm1 input, #campoForm1 select, #button-criarConta{
+      /*.titulo-cadastro{
+        margin-bottom: 3px;
+      }
+
+      .subtitulo-cadastro{
+        margin-top: 2px;
+        margin-bottom: 15px;
+      }*/
+
+      #campoForm1 input, #campoForm1 select{
         display: flexbox;
-        margin: 0 auto 1rem auto;
-        padding: 20px;
+        margin: 0 auto 10px auto;
+        padding: 15px;
         width: 80%;
         max-width: 300px;
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: gray;
       }
 
       #button-criarConta{
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 10px;
+        color: white;
+        background-color: coral;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        cursor: pointer;
       }
 
       .inline-item{
         display: inline-block;
         vertical-align: middle;
         margin-right: 10px;
+        margin-bottom: 5px;
+        margin-top: 3px;
       }
 
       #linkEntrar, #linkTermos {
         text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      #linkEntrar:hover, #linkTermos:hover{
+        color: coral;
       }
 
     </style>
@@ -42,8 +71,16 @@
   
 <body id="body-cadastroUsuario">
   <form id="form1" name="form1" action="../PHP/cadastroSucesso.php" method="POST">
-      <h1>Cadastre-se no Bruma</h1>
-      <p>Já tem cadastro? <a id="linkEntrar" name="linkEntrar" href="login.php">Entre na sua conta</a></p>
+      
+    
+        <h1 class="titulo-cadastro">Cadastre-se no Bruma</h1>
+        <p class="subtitulo-cadastro">Já tem cadastro?
+          <a onclick=
+                "document.getElementById('id01').style.display='block'"
+                class="linkEntrar" id="linkEntrar" name="linkEntrar">
+                Entre na sua conta
+          </a>
+        </p>
         
         <div id="campoForm1" name="campoForm1">
           <input type="text" id="nome" name="nome" maxlength="150"
@@ -111,7 +148,7 @@
           </p>
         </div><br/>
 
-        <input id="button-criarConta" type="submit" value="CRIAR SUA CONTA" />
+        <input id="button-criarConta" type="submit" value="Criar Sua Conta" />
          <br/><br/>
   </form>
 </body>
