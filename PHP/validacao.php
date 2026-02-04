@@ -4,7 +4,7 @@
 
 // Apenas aceita POST e verifica se veio por ele
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: cadastro.php');
+    header('Location: cadastroUsuario.php');
     exit;
 }
 
@@ -92,7 +92,7 @@ if ($is_register) {
 session_start();
 $_SESSION["dadosCadastro"] = $_POST;
 
-header("Location: cadastroOk.php");
+header("Location: cadastroSucesso.php");
 exit;
 }
 
