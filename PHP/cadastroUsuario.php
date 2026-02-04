@@ -11,7 +11,7 @@
     <script src="../JS/forms.js"></script>
 
     <style>
-      body{
+      #body-cadastroUsuario{
         text-align: center
       }
       
@@ -40,8 +40,8 @@
     </style>
   </head>
   
-<body>
-  <form id=form1 name="form1" action="../PHP/cadastroSucesso.php" method="POST">
+<body id="body-cadastroUsuario">
+  <form id="form1" name="form1" action="../PHP/cadastroSucesso.php" method="POST">
       <h1>Cadastre-se no Bruma</h1>
       <p>Já tem cadastro? <a id="linkEntrar" name="linkEntrar" href="login.php">Entre na sua conta</a></p>
         

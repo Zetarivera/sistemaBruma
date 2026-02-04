@@ -17,10 +17,6 @@
             text-decoration: none;
         }
 
-        .logo{
-            color: black;
-        }
-
         .navbar, .navbarLogin {
             align-items: first baseline;
             display: flex;
@@ -71,9 +67,10 @@
             opacity: 0.8;
         }
 
-        #buttonEntrar1{
-            background-color: coral;
+        .btnLogin{
             color: white;
+            background-color: coral;
+            font-weight: bold; /*Usar essa propriedade e valor ao invés de <b>*/
             padding: 08px 20px;
             text-align: center;
             text-decoration: none;
@@ -84,7 +81,7 @@
             border-color: transparent;
         }
 
-        #buttonEntrar1:hover {
+        .btnLogin:hover {
             opacity: 0.8;
         }
 
@@ -132,6 +129,7 @@
 
         .container{
             padding: 16px;
+            text-align: left;
         }
 
         span.userSenha{
@@ -225,13 +223,15 @@
         </div>
 
         <div class="navbarLogin">
+            
             <button type="button"
                     onclick=
                     "document.getElementById('id01').style.display='block'"
-                    class="buttonEntrar1" name="buttonEntrar1" id="buttonEntrar1">
-                <b>Entrar</b>
-            </button>
-
+                    class="btnLogin">Entrar</button>
+                    <!-- Usar <b> no texto dentro da tag button limita
+                        o CSS e "barra" a modificação de 'color' no texto
+                        (mantendo ele sempre preto e em negrito)-->
+        
             <div id="id01" class="modal">
                 <form class="modal-content animate" action="">
                     <div class="imgcontainer">
