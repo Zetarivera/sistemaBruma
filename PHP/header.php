@@ -1,9 +1,10 @@
 <html>
 <head>
     <title></title>
+    <link rel="icon" href="../Assets/IMG/favicon/logo-iconeFullSize.png" type="image/png" />
     <style>
         .styleHeader {
-            padding: 2px;
+            margin: 0;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -11,24 +12,26 @@
             flex-wrap: wrap;
             background-color: #f8f9fa;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
             text-decoration: none;
         }
 
-        .navbar, .navbarLogin {
+        .navbar-opcoes, .navbarLogin {
             align-items: first baseline;
             display: flex;
             gap: 2em;
-            font-size: 14px;
+        }
+
+        .navbar-opcoes{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
         }
 
         .navbarLogin{
             color: white;
         }
 
-        .navbar a{
+        .navbar-opcoes a{
             color: gray;
         }
 
@@ -37,7 +40,7 @@
             font: 1rem "Fira Sans", sans-serif;    
         }
 
-        .navbar input, label {
+        .navbar-opcoes input, label {
             margin: 0.4rem 0;
         }
 
@@ -118,12 +121,12 @@
 
         .imgcontainer {
             text-align: center;
-            margin: 12px 0 12px 0;
+            margin: 15px 0 15px 0;
             position: relative;
         }
 
         img.avatar{
-            width: 40%;
+            width: 30%;
             border-radius: 50%;
         }
 
@@ -211,11 +214,12 @@
 
  <body>
     <header class="styleHeader">
-        <div class="logo">
-        <a href="index.php"><h1><b>BRUMA</b></h1></a>
+        
+        <div class="headerLogo" margin="0" padding="0">
+        <a href="index.php"><img src="../Assets/IMG/logo-horizontal.png" width="180"></a>
         </div>
 
-        <div class="navbar">
+        <div class="navbar-opcoes">
             <a href="index.php">Início</a>
             <a href="#clinicas">Clínicas</a>
             <a href="#servicos">Serviços</a>
@@ -233,23 +237,23 @@
                         (mantendo ele sempre preto e em negrito)-->
         
             <div id="id01" class="modal">
-                <form class="modal-content animate" action="">
+                <form class="modal-content animate" action="principal.php" method="POST">
                     <div class="imgcontainer">
                         <span onclick=
                                 "document.getElementById('id01').style.display='none'"
                                 class="close"
                                 title="Close Modal">&times;</span>
-                        <img src=""
+                        <img src="../Assets/IMG/logo-bruma.jpg"
                         alt="Avatar" class="avatar">
                     </div>
 
                     <div class="container">
-                        <label><b>E-mail:</b></label>
+                        <label><b>E-mail</b></label>
                         <input type="text"
                                 placeholder="Digite seu e-mail"
                                 name="userEmail" required>
 
-                        <label><b>Senha:</b></label>
+                        <label><b>Senha</b></label>
                         <input type="password"
                                 placeholder="Digite sua senha"
                                 name="userSenha" required>
