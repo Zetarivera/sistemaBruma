@@ -118,7 +118,7 @@
 
         .imgcontainer {
             text-align: center;
-            margin: 24px 0 12px 0;
+            margin: 12px 0 12px 0;
             position: relative;
         }
 
@@ -147,7 +147,7 @@
             height: 100%;
             overflow: auto;
             background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.8);
             padding-top: 60px;
         }
 
