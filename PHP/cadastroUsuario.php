@@ -1,3 +1,7 @@
+<?php
+  include 'header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -13,11 +17,11 @@
         text-align: center
       }
       
-      /*.titulo-cadastro{
-        margin-bottom: 3px;
+      .titulo-cadastro{
+        margin-top: 25px;
       }
 
-      .subtitulo-cadastro{
+      /*.subtitulo-cadastro{
         margin-top: 2px;
         margin-bottom: 15px;
       }*/
@@ -69,8 +73,7 @@
   
 <body id="body-cadastroUsuario">
   <form id="form1" name="form1" action="../PHP/cadastroSucesso.php" method="POST">
-      
-    
+        
         <h1 class="titulo-cadastro">Cadastre-se no Bruma</h1>
         <p class="subtitulo-cadastro">Já tem cadastro?
           <a onclick=
