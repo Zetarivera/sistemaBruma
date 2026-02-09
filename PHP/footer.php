@@ -16,7 +16,7 @@
         }
         
         footer {
-            background-color: #f8f9fa;
+            background-color: white;
             color: #6c757d;
         }
 

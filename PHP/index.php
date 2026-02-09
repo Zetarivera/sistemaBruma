@@ -11,42 +11,74 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="../CSS/style.css">
+
+    <style>
+        #bodyIndex{
+            background-color: #f8f9fa;
+            color: black;
+        }
+
+        #home-hero{
+            text-align: center;
+        }
+
+        .servicos{
+            background-color: white;
+            margin: 25px 40px;
+            border-radius: 10px;
+        }
+
+        .filtroBusca{
+            padding: 5px 20px;
+            box-shadow: 2px 2px 10px 1px #888888;
+            border-radius: 10px;
+        }
+
+        .opcoesFiltro{
+            display: flexbox;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="containerIndex" name="containerIndex" id="containerIndex">
+<body id="bodyIndex">
+    <div id="containerIndex" name="containerIndex">
         <section id="home-hero">
-            <section id="contTxtBtn">
-                <h2>Sua beleza em boas mãos</h2>
-                <p>Conectamos você às melhores clínicas de estética da sua região.
-                    Agende procedimentos com segurança e praticidade.</p>
-                <button id="btn01" href="#servicos">Explorar serviços</button>
-            </section>
-
-            <figure>
-                <img class="imgex" src="../Assets/IMG/imgex2.png" alt="Imagem vazia">
-            </figure>
+            <h1>Encontre o Melhor em Estética</h1>
+            <p>Agende seus tratamentos nas melhores clínicas de estética da cidade. <br/>
+            Qualidade, conforto e praticidade garantida.</p>
         </section>
 
-        <section id="socialProof">
-            <p><b>Quem usou e aprovou!</b></p>
-            <section>
-                <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
-                <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
-                <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
-                <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
-                <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
-                <img class="socialCircle" src="../Assets/IMG/circulo-preto.png" alt="Círculo preto">
-            </section>
-        </section>
+        <section id="servicos" class="servicos">
+            <div id="filtroBusca" class="filtroBusca">
+                <h3>Filtros de Busca</h3>
+                
+                <div id="opcoesFiltro" name="opcoesFiltro">
+                    <label for="buscar">Buscar</label><br/>
+                    <input id="buscar" name="buscar" type="search" value="Nome da clínica ou serviço..">
 
-        <section id="servicos"></section>
+                    <label for="especialidade">Especialidade</label>
+                    <select name="especialidade" id="especialidade">
+                        <option value="" disabled selected>Todas</option>
+                        <option value="Corporal">Corporal</option>
+                    </select>
+
+                    <label for="avaliacao">Avaliação Mínima</label>
+                    <select name="avaliacao" id="avaliacao">
+                        <option value="" disabled selected>Todas</option>
+                    </select>
+
+                    <br/><br/><label for="faixaPreco">Faixa de Preço</label><br/>
+                    <input id="faixaPreco" name="faixaPreco" type="range">
+                </div>
+            </div>
+        </section>
         
         <section id="clinicas"></section>
         
         <section id="sobre"></section>
-        </div>
+    </div>
 </body>
 </html>
 
