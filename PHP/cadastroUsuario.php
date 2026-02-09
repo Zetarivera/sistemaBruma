@@ -14,17 +14,22 @@
 
     <style>
       #body-cadastroUsuario{
-        text-align: center
+        text-align: center;
+        background-color: #f8f9fa;
+      }
+
+      #form1 input:not(#button-criarConta), #estado{
+        background-color: white;
       }
       
-      .titulo-cadastro{
+      /*.titulo-cadastro{
         margin-top: 25px;
       }
 
-      /*.subtitulo-cadastro{
+      .subtitulo-cadastro{
         margin-top: 2px;
-        margin-bottom: 15px;
-      }*/
+        margin-bottom: 20px;
+      } */
 
       #campoForm1 input, #campoForm1 select{
         display: flexbox;
@@ -35,6 +40,7 @@
         border-width: 0.5px;
         border-style: solid;
         border-color: gray;
+        background-color: #f8f9fa;
       }
 
       #button-criarConta{
@@ -42,7 +48,7 @@
         font-weight: bold;
         padding: 8px 10px;
         color: white;
-        background-color: coral;
+        background-color: #9c15fc;
         border-radius: 10px;
         border-width: 2px;
         border-style: solid;
@@ -65,9 +71,8 @@
       }
 
       #linkEntrar:hover, #linkTermos:hover{
-        color: coral;
+        color: #9c15fc;
       }
-
     </style>
   </head>
   
