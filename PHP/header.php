@@ -10,7 +10,7 @@
             justify-content: space-evenly;
             font-size: 15px;
             flex-wrap: wrap;
-            background-color: #f8f9fa;
+            background-color: white;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             box-sizing: border-box;
             text-decoration: none;
@@ -31,10 +31,6 @@
             color: white;
         }
 
-        .navbar-opcoes a{
-            color: gray;
-        }
-
         .header label {
             display: block;
             font: 1rem "Fira Sans", sans-serif;    
@@ -44,35 +40,14 @@
             margin: 0.4rem 0;
         }
 
-        .styleHeader a:hover {
-            color: coral;
-        }
-
-        .styleHeader a {
+        .navbar-opcoes a:hover {
+            color: #2c0c64;
             font-weight: bold;
         }
 
-        .buttonCadastrar{
-            background-color: coral;
+        .btnLogin, #btnCadastrar{
             color: white;
-            font-weight: bold;
-            padding: 08px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            cursor: pointer;
-            border-radius: 20px;
-            border-color: transparent;
-        }
-
-        .buttonCadastrar:hover {
-            opacity: 0.8;
-        }
-
-        .btnLogin{
-            color: white;
-            background-color: coral;
+            background-color: #9c15fc;
             font-weight: bold; /*Usar essa propriedade e valor ao invés de <b>*/
             padding: 08px 20px;
             text-align: center;
@@ -80,12 +55,16 @@
             display: inline-block;
             font-size: 14px;
             cursor: pointer;
-            border-radius: 20px;
+            border-radius: 15px;
             border-color: transparent;
         }
 
-        .btnLogin:hover {
+        .btnLogin:hover, #btnCadastrar:hover {
             opacity: 0.8;
+        }
+
+        .navbarLogin input{
+            background-color: #f8f9fa;
         }
 
         /*Estilização do Modal*/
@@ -100,23 +79,19 @@
         }
 
         .buttonEntrar2{
-            background-color: #4CAF50;
+            background-color: #9c15fc;
             color: white;
+            font-weight: bold;
             padding: 14px 20px;
             margin: 8px 0;
             border: none;
+            border-radius: 15px;
             cursor: pointer;
             width: 100%;
         }
 
         .buttonEntrar2:hover {
             opacity: 0.8;
-        }
-
-        .buttonCancelar {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
         }
 
         .imgcontainer {
@@ -158,7 +133,16 @@
             background-color: #fefefe;
             margin: 5% auto 15% auto;
             border: 1px solid #888;
-            width: 40%
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        #senhaRedefinir {
+            color: #9c15fc;
+        }
+
+        #senhaRedefinir:hover{
+            font-weight: bold;
         }
 
         .close {
@@ -204,10 +188,6 @@
                 display: block;
                 float: none;
             }
-
-            .buttonCancelar{
-                width: 100%;
-            }
         }
     </style>
 </head>
@@ -250,7 +230,7 @@
                     <div class="container">
                         <label><b>E-mail</b></label>
                         <input type="text"
-                                placeholder="Digite seu e-mail"
+                                placeholder="seu@email.com"
                                 name="userEmail" required>
 
                         <label><b>Senha</b></label>
@@ -258,17 +238,11 @@
                                 placeholder="Digite sua senha"
                                 name="userSenha" required>
 
-                        <button class="buttonEntrar2" type="submit">Entrar</button>
-                        <input type="checkbox" checked="checked">Lembre de mim
-                    </div>
+                        <span class="userSenha">
+                            <a href="#" id="senhaRedefinir">Esqueceu a senha?</a>
+                        </span>
 
-                    <div class="container"
-                        style="background-color: #f1f1f1;">
-                        <button type="button"
-                                onclick=
-                                "document.getElementById('id01').style.display='none'"
-                                class="buttonCancelar">Cancelar</button>
-                        <span class="userSenha">Esqueceu a <a href="#">senha?</a></span>
+                        <button class="buttonEntrar2" type="submit">Entrar</button>
                     </div>
                 </form>
             </div>
@@ -281,10 +255,9 @@
                     }
                 }
             </script>
-
-            <a class="linkCadastrar" href="cadastroUsuario.php">
-                <input type="button" class="buttonCadastrar" value="Cadastrar" />
-            </a>
+            
+            <input id="btnCadastrar" name="btnCadastrar" type="button" value="Cadastrar"
+            onclick="window.location.href='cadastroUsuario.php';">
         </div>
     </header>
  </body>
