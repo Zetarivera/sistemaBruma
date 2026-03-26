@@ -12,34 +12,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    <style>
-        #bodyIndex{
-            background-color: #f8f9fa;
-            color: black;
-        }
-
-        #home-hero{
-            text-align: center;
-        }
-
-        .servicos{
-            background-color: white;
-            margin: 25px 40px;
-            border-radius: 10px;
-        }
-
-        .filtroBusca{
-            padding: 5px 20px;
-            box-shadow: 2px 2px 10px 1px #888888;
-            border-radius: 10px;
-        }
-
-        .opcoesFiltro{
-            display: flexbox;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body id="bodyIndex">
