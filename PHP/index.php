@@ -12,46 +12,20 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
 
 <body id="bodyIndex">
-    <div id="containerIndex" name="containerIndex">
-        <section id="home-hero">
-            <h1>Encontre o Melhor em Estética</h1>
-            <p>Agende seus tratamentos nas melhores clínicas de estética da cidade. <br/>
-            Qualidade, conforto e praticidade garantida.</p>
-        </section>
+     <section class="hero">
+        <h1 class="subtituloIndex">Encontre sua próxima experiência estética</h1>
+        <div class="search-box">
+            <input type="text" id="buscaProcedimento" placeholder="Procedimento">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <button class="btn" onclick="buscarClinicas()">Buscar</button>
+        </div>
+    </section>
 
-        <section id="servicos" class="servicos">
-            <div id="filtroBusca" class="filtroBusca">
-                <h3>Filtros de Busca</h3>
-                
-                <div id="opcoesFiltro" name="opcoesFiltro">
-                    <label for="buscar">Buscar</label><br/>
-                    <input id="buscar" name="buscar" type="search" value="Nome da clínica ou serviço..">
-
-                    <label for="especialidade">Especialidade</label>
-                    <select name="especialidade" id="especialidade">
-                        <option value="" disabled selected>Todas</option>
-                        <option value="Corporal">Corporal</option>
-                    </select>
-
-                    <label for="avaliacao">Avaliação Mínima</label>
-                    <select name="avaliacao" id="avaliacao">
-                        <option value="" disabled selected>Todas</option>
-                    </select>
-
-                    <br/><br/><label for="faixaPreco">Faixa de Preço</label><br/>
-                    <input id="faixaPreco" name="faixaPreco" type="range">
-                </div>
-            </div>
-        </section>
-        
-        <section id="clinicas"></section>
-        
-        <section id="sobre"></section>
-    </div>
+    <section class="clinicas" id="clinicas"></section>
 </body>
 </html>
 

@@ -1,3 +1,5 @@
+/*----------------------INDEX*/
+
 :root {
   --primary: #2c0c64;
   --secondary: #9c15fc;
@@ -51,6 +53,9 @@ nav a {
 .hero {
   padding: 60px 8%;
   background: linear-gradient(135deg, #2c0c64, #9c15fc);
+}
+
+.subtituloIndex{
   color: white;
 }
 
