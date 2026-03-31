@@ -12,7 +12,7 @@
         <a href="#">Procedimentos</a>
         <a href="#clinicas">Clínicas</a>
         <a href="login-cliente.php">Login</a>
-        <a href="cadastro-cliente.html" class="btn">Cadastro</a>
+        <a href="cadastro-cliente.php" class="btn">Cadastro</a>
     </nav>
     </header>
  </body>
