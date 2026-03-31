@@ -1,45 +1,43 @@
-<div id="id01" class="modal">
-    <form class="modal-content animate" action="principal.php" method="POST">
-        <div class="imgcontainer">
-            <span onclick=
-                    "document.getElementById('id01').style.display='none'"
-                    class="close"
-                    title="Close Modal">&times;</span>
-            <img src="../Assets/IMG/logo-bruma.jpg"
-            alt="Avatar" class="avatar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <section style="padding:60px 8%; display:flex; justify-content:center;">
+        
+        <div class="card" style="max-width:400px; width:100%;">
+            <h2 style="text-align:center;">Login do Cliente</h2>
+
+            <form onsubmit="loginCliente(event)">
+            <input type="email" id="email" placeholder="Email" required="" style="margin-top:15px;">
+            <input type="password" id="senha" placeholder="Senha" required="" style="margin-top:15px;">
+
+            <button class="btn" style="width:100%; margin-top:20px;">
+                Entrar
+            </button>
+            </form>
+
+            <p id="mensagem" style="margin-top:15px; text-align:center;"></p>
+
+            <div style="text-align:center; margin-top:20px;">
+            <a href="#" onclick="recuperarSenha()">Esqueci minha senha</a>
+            </div>
         </div>
 
-        <div class="container">
-            <label><b>E-mail</b></label>
-            <input type="text"
-                    placeholder="Digite seu e-mail"
-                    name="userEmail" required>
+        </section>
 
-            <label><b>Senha</b></label>
-            <input type="password"
-                    placeholder="Digite sua senha"
-                    name="userSenha" required>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+        <script src="js/firebase-config.js"></script>
 
-            <button class="buttonEntrar2" type="submit">Entrar</button>
-            <input type="checkbox" checked="checked">Lembre de mim
-        </div>
+        <script src="js/login-cliente.js"></script>
+</body>
+</html>
 
-        <div class="container"
-            style="background-color: #f1f1f1;">
-            <button type="button"
-                    onclick=
-                    "document.getElementById('id01').style.display='none'"
-                    class="buttonCancelar">Cancelar</button>
-            <span class="userSenha">Esqueceu a <a href="#">senha?</a></span>
-        </div>
-    </form>
-</div>
-
-<script>
-    let modal = document.getElementById('id01');
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
+<?php include 'footer.php'; ?>

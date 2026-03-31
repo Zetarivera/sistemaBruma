@@ -1,7 +1,3 @@
-<?php
-  include 'header.php';
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -18,7 +14,7 @@
 <body>
 <section style="padding:60px 8%; display:flex; justify-content:center; background-color: #f9f7fc;">
         
-        <div class="card" style="max-width:450px; width:100%;">
+        <div class="card" style="max-width:500px; width:100%;">
             <h2 style="text-align:center;">Criar Conta</h2>
 
             <form action="cadastrar-cliente.php" method="post">

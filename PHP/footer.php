@@ -8,9 +8,11 @@
         <div class="footer-container">
 
             <a href="index.php"><p class="footer-copyright">
-                &copy; 2025 Bruma. Todos os direitos reservados.
+                &copy; 2026 Bruma. Todos os direitos reservados.
             </p>
             </a>
+            <a href="cadastro-parceiro.php">Cadastrar Clínica</a>
+
 
             <nav class="footer-nav" aria-label="Footer Social Media Links">
                 <ul>
