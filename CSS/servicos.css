@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f6fa;
+    color: #2c0c64;
+}
+
+/* HEADER */
+.header-bruma {
+    background: white;
+}
+
+.perfil-link {
+    text-decoration: none;
+    color: #2c0c64;
+    font-weight: 500;
+}
+
+/* FILTROS */
+.filtros {
+    margin: 30px auto;
+}
+
+.filtro-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+
+    border: 1px solid #eee;
+}
+
+.filtro-box i {
+    color: #9c15fc;
+}
+
+.form-select {
+    border: none;
+    box-shadow: none;
+}
+
+/* RESULTADO */
+.result-count {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* CARD */
+.servico-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.servico-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* INFO */
+.servico-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servico-nome {
+    font-weight: 600;
+}
+
+.clinica {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+.tag {
+    background: #f1ebff;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+/* BOTÃO */
+.agendar-btn {
+    background: linear-gradient(135deg, #fbaa1c, #fa7c47);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+}
+
+/* HORÁRIOS NO CARD */
+.horarios-preview {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.hora {
+    font-size: 0.75rem;
+    background: #f1ebff;
+    color: #2c0c64;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.hora:hover {
+    background: #9c15fc;
+    color: white;
+}

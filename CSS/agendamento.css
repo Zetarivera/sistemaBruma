@@ -1,0 +1,88 @@
+body {
+    background: #f5f6fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c0c64;
+}
+
+/* HEADER */
+.header-bruma {
+    background: white;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* CARD */
+.agendamento-card {
+    padding: 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* STEPS */
+.steps-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: #999;
+    position: relative;
+}
+
+.step.active {
+    color: #9c15fc;
+}
+
+/* linha */
+.steps-bar::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: #ddd;
+    z-index: 0;
+}
+
+/* CONTEÚDO */
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+/* RESUMO */
+.resumo-item {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.destaque {
+    background: #f1ebff;
+}
+
+/* BOTÕES */
+.next-btn {
+    background: #9c15fc;
+    color: white;
+    border: none;
+}
+
+.confirmar-btn {
+    background: linear-gradient(135deg, #fbaa1c, #fa7c47);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+}

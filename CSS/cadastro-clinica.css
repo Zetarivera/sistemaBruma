@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2c0c64, #9c15fc);
+}
+
+/* CONTAINER */
+.cadastro-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* FORM */
+.cadastro-form {
+    width: 100%;
+    max-width: 400px;
+    color: white;
+}
+
+/* SUBTÍTULO */
+.subtitle {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-group-custom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255,255,255,0.12);
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.input-group-custom i {
+    color: #fbaa1c;
+}
+
+.input-group-custom input,
+.input-group-custom select {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+/* SELECT */
+select option {
+    color: black;
+}
+
+/* PLACEHOLDER */
+input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* PROCEDIMENTOS */
+.section-label {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.procedimentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.procedimentos label {
+    background: rgba(255,255,255,0.15);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* BOTÃO */
+.cadastro-btn {
+    background: linear-gradient(135deg, #fbaa1c, #fa7c47);
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.cadastro-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(250,124,71,0.4);
+}
+
+/* LINK */
+.link {
+    color: #fbaa1c;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* ================= BOTÃO VOLTAR ================= */
+.btn-voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.btn-voltar:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+}
+
+/* PROGRESS BAR */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 33%;
+    background: linear-gradient(135deg, #fbaa1c, #fa7c47);
+    transition: 0.4s;
+}
+
+/* STEPS */
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+/* TÍTULO */
+.step-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.9);
+}
+
+/* BOTÕES */
+.step-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
